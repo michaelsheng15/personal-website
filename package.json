@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billxsheng/PersonalWebsite.git"
+    "url": "git+https://github.com/michaelsheng15/personal-website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/billxsheng/PersonalWebsite/issues"
+    "url": "https://github.com/michaelsheng15/personal-website/issues"
   },
-  "homepage": "https://github.com/billxsheng/PersonalWebsite#readme"
+  "homepage": "https://github.com/michaelsheng15/personal-website#readme"
 }
