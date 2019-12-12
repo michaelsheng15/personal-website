@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendors/fonts/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <title>Michael Sheng</title>
+        <style>
+        * {
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+html,
+body{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size:20px;
+    background-color: #fff;
+    overflow-x: hidden; 
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+p {
+    font-weight: 200;
+}
+
+.nav-row {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.about-row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.button-row {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+}
+            
+section-part {
+    padding: 60px 0;
+}
+
+div {
+    position: relative;
+    padding-top: 0;
+}
+h1 {
+    font-weight: 700;
+}
+
+h2{
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+/*HEADER/MAIN*/
+
+header img {
+    width: 70px;
+    position: relative;
+    top: -25px;
+    left: 10%;
+}
+
+.nav-background {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    background-color: #000;
+}
+
+.nav {
+    text-align: center;
+    font-size: 15px;
+    top: 25px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.nav a:hover {
+    color: #bbdefb;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0); 
+    border-bottom: 4px solid #bbdefb;
+}
+
+/*PROJECTS*/
+
+.abouttitle {
+    height: 253.75px;
+}
+
+.abouttitle h1 {
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.hometown {
+    background-color:#f2f1f1;
+    height: 580px;
+}
+
+.edu {
+    height: 535px;
+}
+
+.major {
+    background-color:#f2f1f1;
+    height: 610px;
+}
+.sports {
+    height: 670px;
+}
+
+.hobbies {
+    background-color:#f2f1f1;
+    height: 765px;
+}
+
+
+.interests {
+    height: 640px;
+}
+
+.point {
+    color: #bbdefb;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    font-size: 15px;
+    color: #000;
+    margin:10px 0 10px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+h4 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 100;
+    width: 100%;;
+    line-height: 25px;
+    text-align: center;
+}
+            
+h5 {
+    text-align: left;
+    font-size: 15px;
+    color: #000;
+    margin:10px 0 10px 0;
+    font-weight: 700;
+    position: relative;
+}
+            
+    .multiple {
+        margin: 0 auto;
+        left: 50%;
+        margin-left: -66px;
+
+    }
+    .multiple2 {
+        margin: 0 auto;
+        left: 50%;
+        margin-left: -90px;
+
+    }
+            .multiple3 {
+        margin: 0 auto;
+        left: 50%;
+        margin-left: -90px;
+
+    }
+            .twitter {
+                position: relative;
+                left: 50%;
+                margin-top: 2%;
+                margin-left: -195px;
+            }
+
+.hometown img {
+    width: 410px;
+    border-radius: 8px;
+    margin-top: 2%;
+    position: relative;
+    left: 50%;
+    margin-left: -205px;
+}
+
+
+
+.edu img {
+    width: 455px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 2%;
+    left: 50%;
+    margin-left: -230px;
+}
+            
+.major iframe {
+    position: relative;
+    left: 50%;
+    margin-top: 2%;
+    margin-left: -200px;
+}
+
+.sports img {
+    width: 255px;
+    position: relative;
+    left: 50%;
+    margin-left: -130px;
+    border-radius: 8px;
+    margin-top: 2%;
+    
+}
+
+
+.sports h3,
+.hobbies h3 {
+    margin: 5px 0 10px 0;
+}
+
+
+.interests img {
+    width: 420px;
+    position: relative;
+    border-radius: 8px;
+    margin-top: 2%;
+    left: 50%;
+    margin-left: -210px;   
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #000;
+    height: 250px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #bbdefb;
+}
+
+.footer img {
+    width: 50px;
+    position: relative;
+    top: -15px;
+    left: 5%;
+}
+
+.footer-nav {
+    text-align: center;
+    list-style: none;
+    font-size: 12px;
+}
+
+.footer p {
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 12px;
+    
+}
+/*ANIMATIONS*/
+.js--right,
+.js--left,
+.js--left2,
+.js--left3{
+    opacity: 0;
+}
+
+.js--right.animated,
+.js--left.animated,
+.js--left2.animated,
+.js--left3.animated {
+    opacity: 1;
+}
+            /* Small tablets to big tablets from 1023 to 1200 px*/
+@media only screen and (max-width: 1200px) {
+    .about-row {
+        padding: 0 3%;
+    }
+
+}
+
+/* Small tablets to big tablets from 767 to 1023 px*/
+@media only screen and (max-width: 1023px) {
+    .about-row {
+        padding: 0 3%;
+    }
+
+}
+
+
+/* Small phones to small tablets from 480 to 767 px*/
+@media only screen and  (max-width: 767px){
+    .nav {
+        font-size: 12px;
+    }
+    .about-row {
+        padding: 0 3%;
+    }
+
+}
+
+
+/* Small phones from 0 to 480 px*/
+@media only screen and  (max-width: 480px){
+    .nav {
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+        top: 30px;
+    }
+    .footer li {
+        position: relative;
+        left: 8px;
+    }
+    .hometown img {
+        width: 300px;
+        margin-left: -148px;
+    }
+    .edu img {
+        width: 300px;
+        margin-left: -150px;
+    }
+    .interests img {
+        width: 330px;
+        margin-left: -165px;
+    }
+    
+    .edu {
+        height: 475px;
+    }
+    
+    .major {
+        height: 630px;
+    }
+    
+    .interests {
+        height: 590px;
+    }
+    
+
+
+    
+
+
+
+}
+        </style>
+    </head> 
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicon_package_v0.16/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/resources/favicon_package_v0.16/favicon.ico">
+    <meta name="msapplication-TileColor" content="#030303">
+    <meta name="msapplication-config" content="/resources/favicon_package_v0.16/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+
+    <body>
+        
+        
+        <header>
+            <nav class= "sticky">
+                <div class="nav-background">
+                    <div class="nav-row">
+                        <div class="col span-1-of-5 nav">
+                                <li><a href="about.html">ABOUT</a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="projects.html">PROJECTS</a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="index.html"><img src="resources/images/msheng12.png"></a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="gallery.html">GALLERY</a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="home.html">CONTACT</a></li>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="abouttitle">
+            <div class="row">
+                <h1>ABOUT</h1>
+            </div>
+            </section>
+        
+        
+        
+         <section class="hometown">
+            <div class="about-row">
+                <div class="descript-hometown">
+                    <h2>Hometown</h2>
+                    <h3><i class="fas fa-arrow-circle-right point"></i>&nbsp; Markham, ON, Canada</h3>
+                    <h4>I attended Central Park Public School before spending my high school years at Markville Secondary School.  </h4>
+                </div>
+                <div class="photo">
+                    <img src="resources/images/markham.jpg" class="js--right">
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="edu">
+            <div class="about-row">
+            <div class="descript-edu">
+                    <h2>Education</h2>
+                    <h3><i class="fas fa-arrow-circle-right point"></i>&nbsp; Markville Secondary School </h3>
+                    <h4>I am currently a senior at Markville Secondary School.</h4>
+                </div>
+            <div class="photo">
+                <img src="resources/images/mss.jpg" class='js--left'>
+            </div>
+            </div>
+        </section>
+
+        
+         <section class="major">
+            <div class="about-row">
+                <div class="descript-major">
+                    <h2>Major</h2>
+                    <h3><i class="fas fa-arrow-circle-right point"></i>&nbsp; Management Engineering</h3>
+                    <h4>Management Engineering is a one-of-a-kind interdisciplinary program (Only one in Canada!) with a split focus in computer science and systems engineering. We use critical thinking and software to improve/develop systems and processes.</h4>
+                </div>
+                <div class="photo">
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/Zw6UpeFCeN0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="sports">
+            <div class="about-row">
+                <div class="descript-sports">
+                    <h2>Sports</h2>
+                    <div class="multiple">
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Ultimate Frisbee</h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Basketball </h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Flag Football </h5>
+                    </div>
+                    <h4>Currently, I am playing intramural basketball and flag football. In high school, I was on the varsity ultimate frisbee team where we finished first overall in all of York Region.</h4>
+                </div>
+                <div class="photo">
+                    <img src="resources/images/uf.png" alt="tyggyuugyuyuh" class='js--left2'>
+                </div>
+            </div>
+        </section>
+        <section class="hobbies">
+            <div class="about-row">
+                <div class="descript-hobbies">
+                    <h2>Hobbies</h2>
+                    <div class="multiple2">
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Toronto Raptors</h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; NCAA College Football</h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Guitar</h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Cooking</h5>
+                    </div>
+                    <h4>In my spare time, I like to keep myself busy with a variety of activities. I love playing my guitar, producing music and watching my Toronto Raptors. </h4>
+                </div>
+                <div class="twitter">
+                    <a class="twitter-timeline" data-width="400" data-height="400" data-theme="dark" href="https://twitter.com/MapleLeafs?ref_src=twsrc%5Etfw">Tweets by MapleLeafs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </section>
+        <section class="interests">
+            <div class="about-row">
+                <div class="descript-interests">
+                    <h2>Interests</h2>
+                    <div class= "multiple3">
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Film Making </h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Web Development </h5>
+                    <h5><i class="fas fa-arrow-circle-right point"></i>&nbsp; Robotics </h5>
+                    </div>
+                    <h4>Since I was a child, I have always had a passion for technology and its application to the real world.</h4>
+                </div>
+                <div class="photo">
+                    <img src="resources/images/interests.jpg" class='js--left3'>
+                </div>
+            </div>
+        </section>
+                 
+        <section class="footer">
+            <div class = "nav-row">
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="about.html">ABOUT</a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="projects.html">PROJECTS</a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="home.html"><img src="resources/images/msheng12.png"></a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="home.html">CONTACT</a></li>
+                </div>
+                
+                
+            
+            
+            </div>
+    
+            <div class="nav-row">
+            <p><i class="fas fa-copyright">&nbsp;</i>Created from scratch by Michael Sheng :)</p>
+            </div>
+        </section>
+        
+      
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/aboutscript.js"></script>
+                <script src="resources/js/script.js"></script>
+        
+    </body>
+</html>

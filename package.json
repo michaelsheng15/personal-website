@@ -1,0 +1,20 @@
+{
+  "name": "pwebsitev1",
+  "version": "1.0.0",
+  "description": "First edition of my personal website created using HTML, CSS, jQuery, and JavaScript.  Visit billsheng.me.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billxsheng/PersonalWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billxsheng/PersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/billxsheng/PersonalWebsite#readme"
+}

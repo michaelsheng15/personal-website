@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendors/fonts/ionicons.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <title>Michael Sheng</title>
+        <style>
+        * {
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+html,
+body{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size:20px;
+    background-color: #fff;
+    overflow-x: hidden; 
+}
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+.nav-row {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.project-row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.button-row {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+div {
+    position: relative;
+    padding-top: 0;
+}
+h1 {
+    font-weight: 700;
+}
+
+h2{
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+/*HEADER/MAIN*/
+
+header img {
+    width: 70px;
+    position: relative;
+    top: -25px;
+    left: 10%;
+}
+
+.nav-background {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    background-color: #000;
+}
+
+.nav {
+    text-align: center;
+    font-size: 15px;
+    top: 25px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.nav a:hover {
+    color: #bbdefb;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0); 
+    border-bottom: 4px solid #bbdefb;
+}
+
+
+/*PROJECTS*/
+
+.projecttitle {
+    height: 253.75px;
+}
+
+.projecttitle h1 {
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.myweb {
+    background-color:#f2f1f1;
+    height: 450px;
+}
+
+
+.harness {
+    height: 500px;
+    background-color:#f2f1f1;
+}
+.point {
+    color: #bbdefb;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 700;
+}
+h3 {
+    font-size: 15px;
+    color: #000;
+    margin:5px 0 20px 0;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 100;
+    width: 400px;
+    line-height: 25px;
+}
+
+.prog h2 {
+    margin-top: 60px;
+}
+
+.prog img {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.myweb h2 {
+    margin-top: 90px;
+}
+.myweb img {
+    width: 80%;
+    margin-top: 70px;
+}
+
+.moodify h2 {
+    margin-top: 60px;
+}
+
+.moodify img {
+    width: 50%;
+    position: relative;
+    top: -20px;
+}
+
+.js--prog,
+.js--myweb,
+.js--moodify{
+    opacity: 0;
+}
+.js--prog.animated,
+.js--myweb.animated,
+.js--moodify.animated{
+    opacity: 1;
+}
+
+
+/*FOOTER*/
+.footer {
+    background-color: #000;
+    height: 250px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #bbdefb;
+}
+
+.footer img {
+    width: 50px;
+    position: relative;
+    top: -15px;
+    left: 5%;
+}
+
+.footer-nav {
+    text-align: center;
+    list-style: none;
+    font-size: 12px;
+}
+
+.footer p {
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 12px;
+    
+}
+            /* Small tablets to big tablets from 1023 to 1200 px*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Small tablets to big tablets from 767 to 1023 px*/
+@media only screen and (max-width: 1023px) {
+    .prog-descript,
+    .myweb-descript,
+    .moodify-descript{
+        padding: 0 30px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .prog-photo img {
+        
+    }
+    
+    .myweb-descript {
+        position: relative;
+    }
+    h4 {
+        width: 300px;
+    }
+}
+
+/* Small phones to small tablets from 480 to 767 px*/
+@media only screen and  (max-width: 767px){
+    .prog,
+    .myweb,
+    .moodify{
+        height: 70vh;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .prog-descript,
+    .moodify-descript{
+        width: 100% !important;
+        position: relative; 
+        bottom: 80px;
+    }
+    h2 {
+        font-size: 100%;
+    }
+
+    h4 {
+        width: 100%;
+        padding-right: 10px;
+    }
+    
+    .prog-photo img{
+        position: relative;
+        bottom: 80px;
+        width: 100%;
+        left: 50%; 
+    }
+    
+    .moodify-photo img {
+        position: relative;
+        left: 75%;
+        
+        
+    }
+    
+    .myweb-descript {
+        width:100% !important;
+    }
+    
+    .myweb img {
+        position: relative;
+        left: 50%;
+        margin-top: 0;
+        width: 110%;
+    }
+
+}
+
+/* Small phones from 0 to 480 px*/
+@media only screen and  (max-width: 480px){
+    .nav {
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+        top: 30px;
+    }
+    .footer li {
+        position: relative;
+        left: 8px;
+    }
+    .prog-photo img{
+        width: 78%;
+        position: relative;
+        left: 50%;
+        margin-left: -39%;
+    }
+    
+    .moodify img {
+        left: 50%;
+        margin-left: -100px;
+        position: relative;
+        top: -50px;
+    }
+    
+    .myweb img {
+        width: 80%;
+        position: relative;
+        left: 50%;
+        margin-left: -40%;
+        bottom: 20px;
+        margin-top: 0;
+    }
+    .prog,
+    .myweb{
+        height: 508px;
+    }
+    
+    .moodify {
+        height: 600px;
+    }
+}
+        </style>
+    </head> 
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicon_package_v0.16/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/resources/favicon_package_v0.16/favicon.ico">
+    <meta name="msapplication-TileColor" content="#030303">
+    <meta name="msapplication-config" content="/resources/favicon_package_v0.16/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    
+    <body>
+        <header>
+            <nav class= "sticky">
+                <div class="nav-background">
+                    <div class="nav-row">
+                        <div class="col span-1-of-5 nav">
+                                <li><a href="about.html">ABOUT</a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="projects.html">PROJECTS</a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="index.html"><img src="resources/images/msheng12.png"></a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="gallery.html">GALLERY</a></li>
+                            </div>
+                            <div class="col span-1-of-5 nav">
+                                <li><a href="home.html">CONTACT</a></li>
+                            </div>
+                    </div>
+                </div>
+                                    
+            </nav>
+        </header>
+        <section class="projecttitle">
+            <div class="row">
+                <h1>PROJECTS</h1>
+            </div>
+            </section>
+        <section class="myweb">
+            <div class="project-row">
+                <div class="col span-1-of-2 myweb-photo">
+                    <img src="resources/images/myweb.png" class="js--myweb">
+                </div>
+                <div class="col span-1-of-2 myweb-descript">
+                    <h2>Personal Website</h2>
+                    <h3><i class="fas fa-arrow-circle-right point"></i>&nbsp; HTML5, CSS3, & JavaScript frameworks </h3>
+                    <h4>I have really learned to appreciate the art behind web development. The site you are currently on is a responsive website I developed from scratch for personal and professional purposes. </h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="myweb">
+            <div class="project-row">
+                <div class="col span-1-of-2 myweb-photo">
+                    <img src="resources/images/IMG_1050.png" class="js-myweb">
+                </div>
+        
+                <div class="col span-1-of-2 myweb-descript">
+                    <h2>Non-Profit Organization</h2>
+                    <h3><i class="fas fa-arrow-circle-right point"></i>&nbsp; Promoting STEM education and careers</h3>
+                    <h4>In partnership with a local school called STEMKIDS, Harness is an organization I created that holds free classes on beginner robotics and programming.</h4>
+                </div>
+            </div>
+        </section>
+                 
+        <section class="footer">
+            <div class = "nav-row">
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="about.html">ABOUT</a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="projects.html">PROJECTS</a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="home.html"><img src="resources/images/msheng12.png"></a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </div>
+                <div class="col span-1-of-5 footer-nav">
+                    <li><a href="home.html">CONTACT</a></li>
+                </div>
+                
+                
+            
+            
+            </div>
+    
+            <div class="nav-row">
+            <p><i class="fas fa-copyright">&nbsp;</i>Created from scratch by Michael Sheng 2019 :)</p>
+            </div>
+        </section>
+        
+      
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/projectscripts.js"></script>
+                <script src="resources/js/script.js"></script>
+        
+    </body>
+</html>
