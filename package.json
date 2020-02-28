@@ -1,7 +1,7 @@
 {
   "name": "pwebsitev1",
   "version": "1.0.0",
-  "description": "First edition of my personal website created using HTML, CSS, jQuery, and JavaScript.  Visit billsheng.me.",
+  "description": "First edition of my personal website created using HTML, CSS, jQuery, and JavaScript.",
   "main": "index.js",
   "scripts": {
     "start": "./index.html",
