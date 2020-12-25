@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    color: #8d8d8d;
+    font-family:'DM sans', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering:optimizeLegibility;
+}
+
+/*--------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*--------------------------------------*/
+
+.row{
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+/*--------------------------------------*/
+/*HEADER*/
+/*--------------------------------------*/
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.nav-left li,
+.nav-right li{
+    display: inline-block;
+    padding: 22px 10px;
+}
+
+.nav-left li a:link,
+.nav-right li a:link,
+.nav-left li a:visited,
+.nav-right li a:visited{
+    color:#8d8d8d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover,
+.nav-left li a:active,
+.nav-right li a:active{
+    color: rgb(19, 18, 18);
+}
+
+.nav-left,
+.nav-right{
+    list-style: none;
+}
+
+
+.logo img{
+    height: auto;
+    width: 60px;
+    padding-top:8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10%;
+}
